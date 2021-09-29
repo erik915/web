@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>css3新增选择器</title>
+    <style>
+        /* 
+            first-child获取ul中第一个子元素 li
+        */
+        /* ul li:first-child {
+            background-color: brown;
+        } */
+
+        /* 
+            last-child获取ul中最后一个子元素 li
+        */
+        /* ul li:last-child {
+            background-color: brown;
+        } */
+
+        /* 
+            nth-child()该选择可以接收一个参数
+            1.n：具体的第n个元素
+            2.关键字：even偶数，odd奇数
+            3.公式：2n：2的倍数, n+2：从第二个开始，-n+2: 2之前包含2
+         */
+        /* ul li:nth-child(4) {
+            background-color: coral;
+        }
+
+        ul li:nth-child(2n) {
+            background-color: crimson;
+        }
+
+        ul li:nth-child(n+5) {
+            background-color: darkorchid;
+        } */
+
+        ul li:nth-child(odd) {
+            background-color: darkviolet;
+        }
+
+        ul li:nth-child(even) {
+            background-color: firebrick;
+        }
+
+        /* 
+            xxx-of-type使用方式上和xxx-child是一样的
+            区别在于
+            xxx-child先对所有子元素排序，然后在选出匹配的标签
+            xxx-of-type 先匹配标签的类型，然后在对所有该类型标签进行排序，最后匹配
+            所以一般父标签中如果有不同类型的多个相同标签可以使用of-type
+            xxx-child和xxx-of-type权重都是10
+         */
+        ol li:first-of-type {
+            background-color: fuchsia;
+        }
+
+        ol li:last-of-type {
+            background-color: hotpink;
+        }
+
+        ol li:nth-of-type(even) {
+            background-color: indigo;
+        }
+
+        div div:first-of-type {
+            background-color: lightcoral;
+        }
+
+        div div:nth-of-type(3) {
+            background-color: mediumslateblue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>这是列表1</li>
+        <li>这是列表2</li>
+        <li>这是列表3</li>
+        <li>这是列表4</li>
+        <li>这是列表5</li>
+        <li>这是列表6</li>
+        <li>这是列表7</li>
+        <li>这是列表8</li>
+        <li>这是列表9</li>
+        <li>这是列表10</li>
+    </ul>
+
+    <ol>
+        <li>有序列表1</li>
+        <li>有序列表2</li>
+        <li>有序列表3</li>
+        <li>有序列表4</li>
+        <li>有序列表5</li>
+        <li>有序列表6</li>
+        <li>有序列表7</li>
+        <li>有序列表8</li>
+        <li>有序列表9</li>
+        <li>有序列表10</li>
+    </ol>
+
+    <div>
+        <p>这是p标签</p>
+        <div>这是第一个div</div>
+        <div>这是第二个div</div>
+        <p>这是p标签</p>
+        <p>这是p标签</p>
+        <div>这是第三个div</div>
+    </div>
+</body>
+
+</html>

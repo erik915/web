@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>三大特性</title>
+    <Style>
+        /* 层叠性，相同选择器的相同属性，后面的会覆盖前面的； */
+        p {
+            color: red;
+        }
+
+        p {
+            color: pink;
+
+        }
+
+        /* 继承性：子标签会继承父标签的文字方面的属性，如color size line-height */
+        div {
+            color: red;
+            font: 20px/40px "Microsoft YaHei";
+        }
+
+        /* 行高继承: 父标签指定了浮点数行高，子标签没有指定行高而是指定了font-size 则会根据当前子标签的size * 浮点数 */
+        li {
+            font-size: 16px;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+
+        /* 优先级：
+            继承或者 *       0,0,0,0
+            标签             0,0,0,1
+            class            0,0,1,0
+            id               0,1,0,0
+            行内样式         1,0,0,0
+            按照从上到下优先级递增。
+            优先级可以叠加，比如两个标签选择器在一起就是 0,0,0,1 + 0,0,0,1 = 0,0,0,2 不存在进位
+            优先级在比较的过程中都是从左边开始比对，如果相同则比对下一位
+        */
+        #aId {
+            color: indianred;
+        }
+
+        .classA {
+            color: maroon;
+        }
+
+        a {
+            color: green;
+        }
+    </Style>
+</head>
+
+<body>
+    <P>这是一个小段落</P>
+
+    <div>
+        <ul>
+            <li>这是列表第一个item，继承了div的文字方面的属性</li>
+        </ul>
+        <h4>这是一个小标题，继承了div的文字方面的属性</h4>
+    </div>
+
+    <div id="priority">
+        <a href="#" id="aId" class="classA">这是伪链接，css是有优先级的</a>
+    </div>
+</body>
+
+</html>

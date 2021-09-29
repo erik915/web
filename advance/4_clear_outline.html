@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>清楚文本框文本域边框</title>
+    <style>
+        /* 使用outline:none可以在文本框获取焦点后不显示原有的样式 */
+        input {
+            width: 400px;
+            border: 1px solid tomato;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        input:focus {
+            border: 2px solid tomato;
+        }
+
+        /* 为了防止textarea拖动改变大小，可以使用 resize: none*/
+        textarea {
+            border-radius: 5px;
+            border: 1px solid saddlebrown;
+            outline: none;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" value="使用outline:none可以在文本框获取焦点后不显示原有的样式">
+    <textarea name="" id="" cols="30" rows="10">为了防止textarea拖动改变大小，可以使用 resize: none</textarea>
+</body>
+
+</html>

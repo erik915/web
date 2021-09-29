@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>土豆网视频item效果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .video {
+            position: relative;
+            width: 444px;
+            height: 320px;
+            margin: 50px auto;
+            cursor: pointer;
+        }
+
+        .video img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .video .mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .2) url(../images/arr.png) no-repeat center;
+        }
+
+        .video:hover .mask {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video">
+        <img src="../images/tudou.jpg" alt="">
+
+        <div class="mask"></div>
+    </div>
+
+    <div class="video">
+        <img src="../images/tudou.jpg" alt="">
+
+        <div class="mask"></div>
+    </div>
+
+    <div class="video">
+        <img src="../images/tudou.jpg" alt="">
+
+        <div class="mask"></div>
+    </div>
+
+    <div class="video">
+        <img src="../images/tudou.jpg" alt="">
+
+        <div class="mask"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>display visibility overflow</title>
+    <style>
+        .common {
+            width: 200px;
+            height: 200px;
+        }
+
+        .first {
+            background-color: coral;
+        }
+
+        .second {
+            background-color: crimson;
+        }
+
+        .first:hover {
+            display: none;
+        }
+
+        .third {
+            background-color: darkblue;
+        }
+
+        .fourth {
+            background-color: darkolivegreen;
+        }
+
+        .third:hover {
+            visibility: hidden;
+        }
+
+         .content {
+             width: 100px;
+             height: 100px;
+             border: 1px solid violet;
+             overflow: hidden;
+         }
+    </style>
+</head>
+
+<body>
+    <p class="displayContent">
+        display不仅可以指定元素为块或者行内块或者行内元素。还可以进行显示或者隐藏，display:none可以隐藏元素并且不占用位置
+    </p>
+
+    <div class="display">
+        <div class="common first">
+        </div>
+
+        <div class="common second"></div>
+    </div>
+    <p class>
+        visibility进行显示或者隐藏， visibility: hidden隐藏元素但是占用位置。visibility: visible显示元素
+    </p>
+
+    <div>
+        <div class="common third">
+        </div>
+
+        <div class="common fourth"></div>
+    </div>
+
+    <p>
+        over-flow是用于处理盒子中内容溢出部分的隐藏，over-flow:hidden是隐藏不显示溢出内容，scroll可以滚动查看溢出部分
+        auto:如果文字没有溢出不显示滚动条，如果溢出了将显示滚动条滚动查看。
+    </p>
+
+    <div class="content">
+        我是很多文字我是很多文字我是很多文字我是很多文字我是很多文字我是很多文字我是很多文字我是很多文字我是很多文字
+        我是很多文字我是很多文字我是很多文字我是很多文字我是很多文字我是很多文字
+        我是很多文字我是很多文字我是很多文字我是很多文字
+    </div>
+</body>
+
+</html>

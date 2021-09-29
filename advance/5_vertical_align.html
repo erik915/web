@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>文本图像表一起使用文本可以垂直居中</title>
+    <style>
+       /*
+         vertical-align只适合行内或者行内块元素。
+         通常div+img时 给外面设置一个边框，img底部和边框默认有间距
+         这是因为行内块和行内元素默认是和文字基线对齐的
+         所以可以设置vertical-align，将对齐方式修改成top middle bottom即可消除边距
+         或者将img改为块元素。推荐前者
+        */
+        .box {
+            border: 1px solid tomato;
+        }
+
+
+        .box img {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="images/item2.jpg" alt="">
+        我hi文本啊打发
+    </div>
+</body>
+
+</html>

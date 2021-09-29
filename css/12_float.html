@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+        .div1 {
+            background-color: blanchedalmond;
+        }
+        .div2 {
+            background-color: blue;
+        }
+        .div3 {
+            background-color: blueviolet;
+        }
+        .div4 {
+            background-color: brown;
+        }
+
+        span {
+            width: 200px;
+            height: 100px;
+            float: left;
+            background-color: mediumslateblue;
+        }
+
+        .second {
+            margin-top: 220px;
+        }
+
+        .imP {
+            float: right;
+            height: 200px;
+            background-color: lightslategrey;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>浮动的特性：</h2>
+    <p>
+        1.脱标<br>
+            具有浮动属性的元素会脱离标准流的布局方式，所谓标准流即块元素独占一行，垂直向下排列，行内元素可以多个排列一行<br>
+
+        2.浮动一行显示<br>
+            具有浮动属性的元素将会在一行显示，如果父元素空间不够，将换行显示。
+    </p>
+    <div class="div1">1</div>
+    <div class="div2">2</div>
+    <div class="div3">3</div>
+    <div class="div4">4</div>
+    
+    <p class="second">
+        2.具有行内块元素的特性
+            具有浮动属性的元素，无论是行内元素或者块元素将具有行内块的特性。可以不使用display:inline-block。如下：
+    </p>
+    <span>span</span>
+    
+    <p class="imP">ppp</p>
+</body>
+
+</html>

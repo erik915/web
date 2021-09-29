@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  color: #333;
+  font-family: "Microsoft YaHei";
+  position: relative;
+}
+
+h1, p, ul, input, span, a {
+  font-style: normal;
+  list-style: none;
+  text-decoration: none;
+}
+
+.login-body {
+  background-color: #f4f6fc;
+  height: 100%;
+  min-height: 740px;
+}
+
+.w1180 {
+  width: 1180px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.Main_box {
+  padding-top: 60px;
+  position: relative;
+}
+
+.w1180 .login-logo {
+  display: block;
+  width: 170px;
+  height: 80px;
+  background: url(../img/login/logo.png) no-repeat center center;
+  background-color: #00cb65;
+}
+
+.login-box {
+  width: 1180px;
+  height: 530px;
+  overflow: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -590px;
+}
+
+.login-box>img {
+  float: left;
+}
+
+.login-box .login-icon {
+  /* display: none; */
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/login/icon-t-2.png");
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.login-box .login-icon-on {
+  display: inline-block;
+  display: none;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/login/icon-t-1.png");
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.login-box .login-icon .login-icon-tit1 {
+  position: relative;
+  top: -80px;
+  left: -30px;
+  width: 122px;
+  height: 72px;
+  line-height: 64px;
+  text-align: center;
+  background: url("../img/login/icon-t-tit.png") no-repeat center center;
+  /* animation: tada 1.5s .2s ease infinite; */
+}
+
+.login-box .login-content{
+  float: left;
+  width: 416px;
+  height: 504px;
+  background-color: #fff;
+  margin-top: 15px;
+  padding: 24px 40px 30px 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.login-box .login-content .login-1 h1{
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.login-box .login-content .login-1 p {
+  font-size: 14px;
+
+}
+
+.login-box .login-content .login-1 .login-ul {
+  height: 110px;
+  margin-top: 44px;
+}
+
+.login-box .login-content .login-1 .login-ul li {
+  height: 55px;
+  border: 1px solid #efefef;
+  padding: 0 10px;
+}
+
+.login-box .login-content .login-1 .login-ul li input {
+  height: 54px;
+  border: 0;
+  outline: none;
+}
+
+.login-box .login-content .login-1 .login-tips {
+  padding-top: 12px;
+  overflow: hidden;
+}
+
+.login-box .login-content .login-1 .login-tips>i {
+  float: left;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/login/icon-error.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  margin: 2px 8px 0 0;
+}
+
+.login-box .login-content .login-1 .login-tips>span {
+  color: #ff615d;
+  float: left;
+}
+
+.login-box .login-content .login-1 .login-radio {
+  padding-top: 38px;
+  overflow: hidden;
+}
+.login-box .login-content .login-1 .login-radio>i {
+  float: left;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #999999;
+  margin: 2px 6px 0 0;
+}
+.login-box .login-content .login-1 .login-radio>span {
+  float: left;
+  color: #999999;
+}
+
+.login-box .login-content .login-1 .login-radio>span:hover {
+  cursor: pointer;
+}
+.login-box .login-content .login-1 .login-btn{
+  height: 50px;
+  background-color: #00cb65;
+  color: #fff;
+  margin-top: 12px;
+  text-align: center;
+  line-height: 50px;
+}
+.login-box .login-content .login-1 .login-btn:hover {
+  cursor: pointer;
+}
+.login-box .login-content .login-1 .login-dl {
+  padding: 38px 0 0 50px;
+}
+.login-box .login-content .login-1 .login-dl>i {
+  float: left;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #999999;
+  margin: 2px 8px 0 0;
+}
+.login-box .login-content .login-1 .login-dl>span {
+  float: left;
+  color: #999999;
+}
+.login-box .login-content .login-1 .login-dl>span:hover {
+  cursor: pointer;
+}
+
+.Foot_box .login-foot{
+  text-align: center;
+  padding: 30px 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -590px;
+  box-sizing: border-box;
+}
+
+.Foot_box .login-foot>span {
+  margin-left: 30px;
+}

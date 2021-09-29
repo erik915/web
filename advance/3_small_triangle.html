@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>网页中小三角的原理</title>
+    <style>
+        /* 利用css中border画出三角形
+            1.width和height必须为0
+            2.设置border宽度为合适大小，设置border方向上的颜色可以呈现出不同方向的三角
+        */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-width: 40px;
+            border-color: blue chocolate darkviolet green;
+            border-style: solid;
+        }
+
+        .pop-window {
+            position: relative;
+            width: 100px;
+            height: 400px;
+            background-color: burlywood;
+            margin: auto;
+        }
+
+        .pop-window span {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px;
+            border-color: transparent transparent burlywood transparent;
+            position: absolute;
+            right: 10px;
+            top: -19px;
+        }
+
+        .show-price {
+            width: 160px;
+            height: 24px;
+            border: 1px solid red;
+            border-left: 0;
+            margin: 50px auto;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            line-height: 24px;
+        }
+
+        .show-price .miaosha {
+            float: left;
+            width: 90px;
+            height: 100%;
+            vertical-align: middle;
+            background-color: red;
+            border: 0;
+            position: relative;
+        }
+
+        .xieti {
+            width: 0;
+            height: 0;
+            border-width: 0 0 24px 10px;
+            border-color: transparent transparent white transparent;
+            border-style: solid;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .show-price .delete {
+            color: #999;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="triangle"></div>
+
+    <div class="pop-window">
+        <span></span>
+    </div>
+
+    <div class="show-price">
+        <span class="miaosha">
+            <i class="xieti"></i>
+            $130
+        </span>
+        <span  class="delete">$200</span>
+    </div>
+</body>
+
+</html>

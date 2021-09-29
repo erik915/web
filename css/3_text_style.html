@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>text样式</title>
+    <style>
+        #family {
+            font-family: 'Microsoft YaHei';
+        }
+
+        #style {
+            font-style: italic;
+        }
+
+        #size {
+            font-size: 20px;
+        }
+
+        #weight {
+            font-weight: bold;
+        }
+
+        /* font是文字的复合属性，顺序为 style weight size family 其中size和family是必须的 */
+        #font {
+            font: italic 400 23px '宋体';
+        }
+
+        #underline {
+            text-decoration: underline;
+        }
+
+        #decoration {
+            text-decoration: none;
+        }
+
+        #color {
+            color: red;
+        }
+
+        #align {
+            text-align: center;
+        }
+
+        /* 使用em为单位默认会根据当前的文字大小来索引比如当前文字为20px, 缩进2em就相当于缩进40px */
+        #indent {
+            text-indent: 2em;
+            font-size: 20px;
+        }
+
+        /* 行高是包括文字大小加上上边距和下边距 这里文字行间距是30px， 文字到校是16px，那么上下各是7px ,行高可以用浮点数来表示，计算公式：fontsize * 浮点数 */
+        #lineHeight {
+            line-height: 30px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="family">文字字体</div>
+    <div id="style">文字样式</div>
+    <div id="size">文字大小</div>
+    <div id="weight">文字加粗</div>
+    <div id="underline">文字下划线</div>
+    <div id="font">文字的复合属性</div>
+    <div>
+        <a href="#" id="decoration">我是一个链接，去除了下划线</a>
+    </div>
+    <div id="color">文字颜色</div>
+    <div id="align">文字水平对齐方式</div>
+    <p id="indent">
+        文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进文字缩进
+    </p>
+    <p id="lineHeight">
+        文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距文字的行间距
+    </p>
+</body>
+
+</html>

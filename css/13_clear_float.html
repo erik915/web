@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+        当子元素是浮动的而父元素不能确定自身的高度，并且会影响下面的布局的时候需要清除浮动 
+        清楚浮动的方式
+            1.额外标签法（了解）
+                在最后一个子元素加上一个块标签，设置class，然后css中class添加 clear:both
+            2.在父元素上增加overflow:hidden
+            3.使用伪类::after
+            4.使用双伪类 ::before ::after
+        */
+        .father {
+            width: 700px;
+            margin: 20px auto;
+            border: 2px solid indigo;
+            /* overflow: hidden; */
+        }
+
+        /* .clearfix {
+            clear: both;
+        } */
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            visibility: hidden;
+            clear: both;
+            height: 0;
+        }
+        /* 兼容IE6,7 */
+        .clearfix {
+            zoom: 1;
+        }
+
+        /* .clearfix::before,
+        .clearfix::after {
+            display: block;
+            content: "";
+        }
+
+        .clearfix::after {
+            clear: both;
+        }
+
+        .clearfix {
+            zoom: 1;
+        } */
+
+        .father div {
+            width: 200px;
+            height: 300px;
+            float: left;
+        }
+
+        .first {
+            background-color: royalblue;
+        }
+
+        .second {
+            background-color: aquamarine;
+        }
+
+        .third {
+            background-color: cadetblue;
+        }
+
+        .foot {
+            height: 200px;
+            background-color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father clearfix">
+        <div class="first">1</div>
+        <div class="second">2</div>
+        <div class="third">3</div>
+        <!-- <p class="clearfix"></p> -->
+    </div>
+
+    <div class="foot"></div>
+</body>
+
+</html>

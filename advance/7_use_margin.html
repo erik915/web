@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>巧妙的使用margin负值</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 1000px;
+            margin: 100px auto;
+        }
+
+        .box div {
+            float: left;
+            width: 199px;
+            margin-left: -1px;
+            height: 199px;
+            border: 1px solid purple;
+            position: relative;
+        }
+
+        .box div:hover {
+            border: 1px solid tomato;
+            z-index: 1;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+    </div>
+</body>
+
+</html>

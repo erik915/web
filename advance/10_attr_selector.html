@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Css3中属性选择器</title>
+    <style>
+        /* 
+            使用 [attr]可以选中包含某属性的标签，属性选择器的权重是10
+            [attr=""]表示选中属性=xxx的标签。
+            [attr^=""]表示选中属性值以xxx开头的标签
+            [attr$=""]表示选中属性值以xxx结尾的标签
+            [attr*=""]表示选中属性包含xxx值的标签
+        */
+        input[value] {
+            color: brown;
+        }
+
+        /* p[class=icon3] {
+            background-color: chocolate;
+        } */
+        /* p[class^=icon] {
+            background-color: darkcyan;
+        } */
+
+        /* p[class*=icon] {
+            background-color: darkolivegreen;
+        } */
+
+        /* p[class$="1"] {
+            background-color: darkorange;
+        } */
+    </style>
+</head>
+
+<body>
+    <input type="text" value="我是有value属性的">
+    <input type="text">
+
+    <p class="icon1">这是段落1</p>
+    <p class="icon2">这是段落2</p>
+    <p class="icon3">这是段落3</p>
+    <p class="icon4">这是段落4</p>
+    <p>这是段落5</p>
+
+    <p class="p-icon-data1">这是段落数据1</p>
+    <p class="p-icon-data2">这是段落数据2</p>
+    <p class="p-icon-data3">这是段落数据3</p>
+    <p class="p-icon-data4">这是段落数据4</p>
+    <p>这是段落数据5</p>
+</body>
+
+</html>
