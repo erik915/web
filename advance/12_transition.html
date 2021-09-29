@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>属性过渡</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            transition: all .5s ease;
+        }
+
+        .box:hover {
+            width: 300px;
+            height: 300px;
+        }
+
+        .progress {
+            width: 200px;
+            height: 20px;
+            margin-top: 50px;
+            border: 1px solid red;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .progress-bg {
+            width: 50px;
+            height: 20px;
+            background-color: red;
+            border-radius: 10px;
+            transition: width .5s;
+        }
+
+        .progress-bg:hover {
+            width: 200px;
+        }
+
+        .list::before,
+        .list::after {
+            content: "";
+            display: table;
+        }
+
+        .list::after {
+            clear: both;
+        }
+
+        .list {
+            width: 700px;
+            margin: 50px auto;
+            zoom: 1;
+        }
+
+        .item {
+            float: left;
+            width: 200px;
+            height: 250px;
+            background-color: #fff;
+            margin-right: 15px;
+            position: relative;
+            left: 0;
+            top: 0;
+            transition: all .1s;
+        }
+
+        .item:hover {
+            top: -5px;
+            box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, .2);
+        }
+
+        .mi-logo-box {
+            position: relative;
+            width: 240px;
+            height: 240px;
+            overflow: hidden;
+        }
+        
+        .mi-bg {
+            width: 240px;
+            height: 240px;
+            background-color: #ff6700;
+        }
+        
+        .logo {
+            position: absolute;
+            left: -240px;
+            top: 0;
+            width: 480px;
+            height: 240px;
+            transition: left .1s;
+        }
+        
+        .home {
+            float: left;
+            width: 240px;
+            height: 240px;
+            background: url(images/home.png) no-repeat center;
+        }
+
+
+        .mi-logo {
+            float: left;
+            width: 240px;
+            height: 240px;
+            background: url(images/mi_logo.png) no-repeat center;
+        }
+
+        .mi-logo-box:hover .logo {
+            position: absolute;
+            left: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+
+    <div class="progress">
+        <div class="progress-bg"></div>
+    </div>
+
+    <div class="list">
+        <div class="item">
+
+        </div>
+        <div class="item">
+
+        </div>
+        <div class="item">
+
+        </div>
+    </div>
+
+    <div class="mi-logo-box">
+        <div class="mi-bg"></div>
+        <div class="logo">
+            <div class="home"></div>
+            <div class="mi-logo"></div>
+        </div>
+    </div>
+</body>
+
+</html>
