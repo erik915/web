@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?ewjxcj');
+    src: url('../fonts/icomoon.eot?ewjxcj#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?ewjxcj') format('truetype'),
+        url('../fonts/icomoon.woff?ewjxcj') format('woff'),
+        url('../fonts/icomoon.svg?ewjxcj#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.page-center {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.head {
+    height: 31px;
+    background-color: #f1f1f1;
+}
+
+.common-text-red {
+    color: #c81623;
+}
+
+.head .page-center .head-left {
+    float: left;
+    height: 100%;
+    line-height: 31px;
+}
+
+.head .page-center .head-right {
+    float: right;
+    height: 100%;
+    line-height: 31px;
+}
+
+.head .page-center .head-left a:hover {
+    color: #c81623;
+    text-decoration: none;
+}
+
+.head .page-center .head-right ul li {
+    float: left;
+}
+
+.head .page-center .head-right ul li a {
+    padding: 0 15px;
+}
+
+.head .page-center .head-right ul li:nth-child(n+2) a {
+    border-left: 1px solid #666;
+}
+
+.head .page-center .head-right .down-arrow::after {
+    font-family: 'icomoon';
+    margin-left: 5px;
+    content: "\e902";
+}
+
+.head-search {
+    position: relative;
+    height: 105px;
+    background-color: pink;
+}
+
+.head-search .logo {
+    float: left;
+    width: 171px;
+    height: 61px;
+    margin-top: 25px;
+    background: url(../images/logo.png) no-repeat center;
+}
+
+.head-search .logo h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 61px;
+    font-size: 0;
+}
+
+.head-search .shopping-car {
+    position: relative;
+    float: right;
+    width: 140px;
+    height: 35px;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    margin-top: 25px;
+    margin-right: 60px;
+    text-align: center;
+}
+
+.head-search .shopping-car::before {
+    font-family: icomoon;
+    line-height: 35px;
+    content: "\e93a";
+    color: #c81623;
+    margin-right: 5px;
+}
+
+
+.head-search .shopping-car::after {
+    font-family: icomoon;
+    content: "\e900";
+    margin-left: 10px;
+}
+
+.head-search .shopping-car .count {
+    position: absolute;
+    left: 95px;
+    top: -5px;
+    padding: 0 5px;
+    color: white;
+    background-color: #e60012;
+    border-radius: 7px 7px 7px 0;
+}
+
+.head-search .search-box {
+    position: absolute;
+    left: 347px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+
+.head-search .search-box .input-search {
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.head-search .search-box .btn-search {
+    float: left;
+    width: 80px;
+    height: 33px;
+    color: white;
+    margin-top: -1px;
+    background-color: #b1191a;
+    border-radius: 0;
+}
+
+.head-search .search-box .input-search::placeholder {
+    font-size: 12px;
+}
+
+.head-search .hotwords {
+    position: absolute;
+    left: 358px;
+    top: 69px;
+}
+
+.head-search .hotwords li {
+    float: left;
+    margin: 0 10px;
+}
+
+.head-search .hotwords li:first-child {
+    margin: 0
+}

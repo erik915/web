@@ -1,0 +1,82 @@
+head nav h31 bg #f1
+
+red  #c81623
+
+
+
+head nav li h12 mar t9 r15 
+
+arrow mar left 5
+
+-------------------------------------
+
+head h105 
+logo top 25
+search w538 h36   red#b1191a  t25
+input w454 h32 padding-left 10
+btn w80 h32  red#b1191a
+hotwords marH10
+shopcar w140 h35 borad #df bg#f7 r60 t25 
+left-icon mar right 5 right-icon margin left 10
+count h14 radius 7 bg#e60012 paddingH 5 t5 l105
+
+------------------------------------------------------
+
+nav h47 red#b1191a
+leftBox h45 w210 
+dd w210 h465 bg#c81623
+dd item h31 marleft 2 paddingleft 10
+rightBox item paddingH25 
+
+------------------------------------
+
+footer h415 #f5 paddingT 30
+service h80 line#ccc
+serviceitem w300 h50 paddingleft35 text martright8
+
+help h185 line#ccc paddingT 20 paddingL50
+dl w200 dt marginB10
+
+copyright paddingtop20
+link marb15
+
+-------------------------
+
+main H455 w980 marL220 
+focus w721
+news w250
+newstop h165 padding15
+newtophead h33
+newstopbody h24 padding 5 padding 15
+lifeservice h209
+lifeserviceitem w63 h71
+bargain marT5
+
+------------------------------------
+家电Head h30 line#c81623 rightList marleft 15px
+body h361
+item1 w210 bg#f9 listitem w85 h34 paddingL12 item marR10
+item2 w329
+item3 w221
+item4 w221
+item5 w219 
+
+-------------------------------------------
+秒杀 L190 T40 paddingT3 paddingL14
+
+nav left list paddingH30 right list paddingH20 
+
+list item w290 h460 marR13
+
+---------------------------------
+
+regist head h84 paddingT18
+
+regist body h522 marT20 head h42 border #ccc  bg#ec paddingL10
+
+form w600 marT50
+label w88 input w242 h37 
+safe paddingH 12
+
+
+
